@@ -5,9 +5,9 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta name="description" content="CV of Gerrit Jan de Bruin" />
-	<meta name="author" content="Gerrit Jan de Bruin" />
-	<title>CV | Gerrit Jan de Bruin</title>
+	<meta name="description" content="CV of Gerrit-Jan de Bruin, research software engineer at TNO" />
+	<meta name="author" content="Gerrit-Jan de Bruin" />
+	<title>CV | Gerrit-Jan de Bruin</title>
 
 	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 	<!-- Font Awesome icons (free version)-->
@@ -27,6 +27,15 @@
 		#experience p, #publications p {margin-bottom: 0;}
 		#experience h3 {font-size: 1.5rem; margin: .25rem 0;}
 		#publications h3 {font-size: 1.5rem; margin: 1rem 0;}
+		@media print {
+			#sideNav, .social-icons {display: none !important;}
+			body {padding: 0 !important;}
+			section.resume-section {min-height: 0 !important; padding: 1.5rem 0 !important;}
+			.lead, .mb-5 {margin-bottom: 1rem !important;}
+			h1 {font-size: 3rem;}
+			.d-flex, li, p {break-inside: avoid;}
+			h2, h3, .subheading {break-after: avoid;}
+		}
 	</style>
 
   <!-- Matomo -->
@@ -60,6 +69,7 @@
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#software">Software</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
 				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
@@ -72,27 +82,24 @@
 		<!-- About-->
 		<section class="resume-section" id="about">
 			<div class="resume-section-content">
-				<h1 class="mb-0">Gerrit Jan <span class="text-primary">de Bruin</span></h1>
+				<h1 class="mb-0">Gerrit-Jan <span class="text-primary">de Bruin</span></h1>
 				<div class="subheading mb-5">
-					Cremerstraat 64 · 3532BG Utrecht · <a href="mailto:gerritjan.debruin@gmail.com">gerritjan.debruin@gmail.com</a> · <a href="./">computerscientist.nl</a>  ·  31-10-1993
+					Utrecht · <a href="mailto:gerritjan.debruin@gmail.com">gerritjan.debruin@gmail.com</a> · <a href="https://www.gerritjandebruin.nl/">gerritjandebruin.nl</a>
 				</div>
 				<div class="lead mb-5">
 					<p>
-						I am a PhD-candidate in Computer Science working both at Leiden University and the Government of the Netherlands. 
-						My research is about applying network science in the infrastructure domain in collaboration with the Ministry of Infrastructure and Water Management.
-						The ultimate goal is to assist inspectorates in their risk assessment in a data-driven way.
-						This can aid in maximizing safety and minimizing environmental pollution with only limited inspection capacity.
+						I am a research software engineer at TNO, in the group Environmental Modelling, Sensing &amp; Analysis.
+						I make measurement data usable: from sensor networks, our measurement van and the Cabauw site to datasets that researchers, inspectors and policy makers can work with.
 					</p>
 					<p>
-						I first obtained a bachelor’s degree in chemistry, but back then working with (substantial amounts of) data had already my interest.
-						My masters is in analytical chemistry. 
-						In my MSc thesis I compared different analytical approaches to enforce sulphur emission regulation in international shipping, both from an instrumental and data science perspective.
+						I trained as an analytical chemist at the University of Amsterdam and obtained my PhD at Leiden University on network analysis for smart inspection, together with the Human Environment and Transport Inspectorate.
+						What I value most is work that gets used, with data, code and choices that others can trace.
 					</p>
 				</div>
 				<div class="social-icons">
 					<a class="social-icon" href="https://www.linkedin.com/in/gerrit-jan"><i class="fab fa-linkedin-in"></i></a>
 					<a class="social-icon" href="https://github.com/gerritjandebruin"><i class="fab fa-github"></i></a>
-					<a class="social-icon" href="http://orcid.org/0000-0003-4936-879X"><i class="fab fa-orcid"></i></a>
+					<a class="social-icon" href="https://orcid.org/0000-0003-4936-879X"><i class="fab fa-orcid"></i></a>
 					<a class="social-icon" href="https://scholar.google.nl/citations?user=9R_NScgAAAAJ"><span class="fa-scholar fa-1x"></span></a>
 				</div>
 			</div>
@@ -104,57 +111,66 @@
 				<h2>Experience</h2>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
 					<div class="flex-grow-1">
-						<h3>PhD-Candidate</h3>
-						<div class="subheading mb-2">Leiden University & Ministery of Infrastructure and Water Management</div>
+						<h3>Research software engineer</h3>
+						<div class="subheading mb-2">TNO, Environmental Modelling, Sensing &amp; Analysis</div>
 						<p>
-							My research focuses on data and network science in the governmental domain. 
-							My supervisors from Leiden University are <a href="http://franktakes.nl/" target="_blank">Frank Takes</a>, <a href="https://www.universiteitleiden.nl/en/staffmembers/cor-veenman" target="_blank">Cor Veenman</a> and <a href="https://nl.wikipedia.org/wiki/Jaap_van_den_Herik" target="_blank">Jaap van den Herik</a> and from the Ministery <a href="https://www.linkedin.com/in/jasper-van-vliet-bb1266a/" target="_blank">Jasper van Vliet</a>.
-							I am part of the IDlab team within the Human Environment and Transport Inspectorate.
+							I build and maintain the software and data chains behind our air quality measurements: the platform for particulate matter sensor networks, the data acquisition chain of the measurement van and the Cabauw site, and the processing of ship emission measurements for the Human Environment and Transport Inspectorate.
+							I also analyse measurement data for clients, implement FAIR data management within the department, and present on data management and AI, both internally and to clients.
 						</p>
 					</div>
-					<div class="flex-shrink-0"><span class="text-primary">2017 - Present</span></div>
+					<div class="flex-shrink-0"><span class="text-primary">2022 - Present</span></div>
+				</div>
+				<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+					<div class="flex-grow-1">
+						<h3>PhD candidate</h3>
+						<div class="subheading mb-2">Leiden University &amp; Ministry of Infrastructure and Water Management</div>
+						<p>
+							Research on network analysis for smart inspection in the transport domain, carried out at the Leiden Institute of Advanced Computer Science and the Innovation and Data Lab of the Human Environment and Transport Inspectorate.
+							My supervisors were <a href="https://nl.wikipedia.org/wiki/Jaap_van_den_Herik" target="_blank">Jaap van den Herik</a>, <a href="http://franktakes.nl/" target="_blank">Frank Takes</a> and <a href="https://www.universiteitleiden.nl/en/staffmembers/cor-veenman" target="_blank">Cor Veenman</a>.
+						</p>
+					</div>
+					<div class="flex-shrink-0"><span class="text-primary">2017 - 2022</span></div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
 					<div class="flex-grow-1">
 						<h3>Mystery shopper</h3>
 						<div class="subheading mb-2">Freelance</div>
 						<p>
-							Although completely different to my main occupation, I have now more than ten years experience in mystery shopping.
-							I like to contribute to a better experience for the clients I work for.
-							I successfully completed hundreds of projects, ranging from service checks for airliners, to hotels, shops, and restaurants checks.
-							For these projects, I sometimes switch to a different personality to get a genuine customer journey.
-							In the end, I draft an extensive report which can be used for corporate compliancy checks, employee training or legal compliancy checks.
+							Hundreds of mystery visits for several agencies, from airlines and international train services to hotels, shops and restaurants.
+							I evaluate the service against the client's guidelines and report my findings.
 						</p>
 					</div>
-					<div class="flex-shrink-0"><span class="text-primary">2017 - Present</span></div>
-				</div>				
+					<div class="flex-shrink-0"><span class="text-primary">2010 - Present</span></div>
+				</div>
+				<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+					<div class="flex-grow-1">
+						<h3>Treasurer</h3>
+						<div class="subheading mb-2">Yacht club ZV de Lek (volunteer)</div>
+						<p>Responsible for the finances of the club: budget, bookkeeping, membership fees and the annual accounts.</p>
+					</div>
+					<div class="flex-shrink-0"><span class="text-primary">Present</span></div>
+				</div>
+				<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+					<div class="flex-grow-1">
+						<h3>System administrator</h3>
+						<div class="subheading mb-2">Van der Meer &amp; Van Tilburg</div>
+						<p>Responsible for buying and maintaining all cloud, hardware and software solutions of this consultancy and its projects.</p>
+					</div>
+					<div class="flex-shrink-0"><span class="text-primary">2014 - 2020</span></div>
+				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
 					<div class="flex-grow-1">
 						<h3>Volunteer</h3>
 						<div class="subheading mb-2">Christian Church De Wegwijzer Almere</div>
-						<p>Managed with a team all ICT business including installing of cash decks, live streaming, website and
-							communication system for more than 400 people.</p>
+						<p>Managed, with a team, all ICT of the church, including live streaming, the website and the communication system for more than 400 people.</p>
 					</div>
 					<div class="flex-shrink-0"><span class="text-primary">2015 - 2019</span></div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
 					<div class="flex-grow-1">
-						<h3>System administrator </h3>
-						<div class="subheading mb-2">Van der Meer & Van Tilburg</div>
-						<p>
-							Responsible for buying and maintaining all necessary cloud, hardware and software solutions for this
-							innovative company.
-							Did this as well for their projects, such as innovaction, greenovate, KPOT, KCBI, PIT, hoef-kwartier maken.
-						</p>
-					</div>
-					<div class="flex-shrink-0"><span class="text-primary">2014 - today</span></div>
-				</div>
-				<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-					<div class="flex-grow-1">
-						<h3>Student Assistant</h3>
+						<h3>Student assistant</h3>
 						<div class="subheading mb-2">Utrecht University</div>
-						<p>Helping at Open Days and "Meet the Bachelor" for the chemistry department and designing chemistry tests
-							and make them available in DSO (Digital Chemistry Environment).</p>
+						<p>Helped at open days and "Meet the Bachelor" for the chemistry department, and designed chemistry tests in the Digital Chemistry Environment (DSO).</p>
 					</div>
 					<div class="flex-shrink-0"><span class="text-primary">2012 - 2014</span></div>
 				</div>
@@ -165,74 +181,85 @@
 		<section class="resume-section" id="publications">
 			<div class="resume-section-content">
 				<h2>Publications</h2>
-				<h3>Refereed</h3>
+				<h3>PhD thesis</h3>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
-					<div class="flex-shrink-0 mr-2">6 <a href="https://rdcu.be/cJ5a5" target="_blank" download><i class="fas fa-download"></i></a></div>
+					<div class="flex-shrink-0 mr-2">-</div>
 					<div class="flex-grow-1">
 						<p class="mb-0">
-							<b>Gerrit Jan de Bruin</b>, António Peirera Barata, Hendrik J. van den Herik, Frank W. Takes, Cor J. Veenman,
-							<a href="https://doi.org/10.1140/epjds/s13688-022-00326-w">Fair automated assessment of noncompliance in cargo ship networks</a>,  
+							<b>Gerrit-Jan de Bruin</b>,
+							<a href="https://hdl.handle.net/1887/3656981" target="_blank">Network Analysis Methods for Smart Inspection in the Transport Domain</a>,
+							PhD thesis, Leiden University, SIKS Dissertation Series 2023-21 (2023).
+						</p>
+					</div>
+				</div>
+				<h3>Refereed</h3>
+				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
+					<div class="flex-shrink-0 mr-2">6</div>
+					<div class="flex-grow-1">
+						<p class="mb-0">
+							<b>Gerrit Jan de Bruin</b>, António Pereira Barata, Hendrik J. van den Herik, Frank W. Takes, Cor J. Veenman,
+							<a href="https://doi.org/10.1140/epjds/s13688-022-00326-w" target="_blank">Fair automated assessment of noncompliance in cargo ship networks</a>,
 							<emph>EPJ Data Science</emph> <b>11,</b> 13 (2022).
 						</p>
 					</div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
-					<div class="flex-shrink-0 mr-2">5 <a href="https://link.springer.com/content/pdf/10.1007/s13278-021-00787-3.pdf" target="_blank" download><i class="fas fa-download"></i></a></div>
+					<div class="flex-shrink-0 mr-2">5</div>
 					<div class="flex-grow-1">
 						<p class="mb-0">
-							<b>Gerrit Jan de Bruin</b>, Cor J. Veenman, Hendrik J. van den Herik, Frank W. Takes, 
-							<a href="https://doi.org/10.1007/s13278-021-00787-3">Supervised temporal link prediction in large-scale real-world networks</a>,  
+							<b>Gerrit Jan de Bruin</b>, Cor J. Veenman, Hendrik J. van den Herik, Frank W. Takes,
+							<a href="https://doi.org/10.1007/s13278-021-00787-3" target="_blank">Supervised temporal link prediction in large-scale real-world networks</a>,
 							<emph>Social Network Analysis and Mining</emph> <b>11,</b> 80 (2021).
 						</p>
 					</div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
-					<div class="flex-shrink-0 mr-2">4 <a href="attachments/cn2020-paper.pdf" target="_blank" download><i class="fas fa-download"></i></a></div>
+					<div class="flex-shrink-0 mr-2">4</div>
 					<div class="flex-grow-1">
 						<p class="mb-0">
-							<b>Gerrit Jan de Bruin</b>, Cor J. Veenman, Hendrik J. van den Herik, Frank W. Takes, 
-							<a href="attachments/cn2020-paper.pdf" download>Experimental Evaluation of Train and Test Split Strategies in Link Prediction</a>,  
+							<b>Gerrit Jan de Bruin</b>, Cor J. Veenman, Hendrik J. van den Herik, Frank W. Takes,
+							<a href="attachments/cn2020-paper.pdf" target="_blank">Experimental Evaluation of Train and Test Split Strategies in Link Prediction</a>,
 							in <emph>Proceedings of the 9th International Conference on Complex Networks</emph>, Studies in Computational Intelligence 994, pp. 79-91, Springer, 2020.
 						</p>
 					</div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
-					<div class="flex-shrink-0 mr-2">3 <a href="attachments/cn2019-paper.pdf" target="_blank" download><i class="fas fa-download"></i></a></div>
+					<div class="flex-shrink-0 mr-2">3</div>
 					<div class="flex-grow-1">
 						<p class="mb-0">
-							<b>Gerrit Jan de Bruin</b>, Cor J. Veenman, Hendrik J. van den Herik, Frank W. Takes, 
-							<a href="https://doi.org/10.1007/978-3-030-36683-4_12" target="_blank">Understanding Dynamics of Truck Co-Driving Networks</a>,  
+							<b>Gerrit Jan de Bruin</b>, Cor J. Veenman, Hendrik J. van den Herik, Frank W. Takes,
+							<a href="https://doi.org/10.1007/978-3-030-36683-4_12" target="_blank">Understanding Dynamics of Truck Co-Driving Networks</a>,
 							in <emph>Proceedings of the 8th International Conference on Complex Networks</emph>, Studies in Computational Intelligence 882, pp. 140-151, Springer, 2019.
 						</p>
 					</div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
-					<div class="flex-shrink-0 mr-2">2 <a href="attachments/cn2018-paper.pdf" target="_blank" download><i class="fas fa-download"></i></a></div>
+					<div class="flex-shrink-0 mr-2">2</div>
 					<div class="flex-grow-1">
 						<p class="mb-0">
-							<b>Gerrit Jan de Bruin</b>, Cor J. Veenman, Hendrik J. van den Herik, Frank W. Takes, 
-							<a href="http://dx.doi.org/10.1007/978-3-030-05414-4_18" target="_blank">Understanding Behavioral Patterns in Truck Co-driving Networks</a>,  
+							<b>Gerrit Jan de Bruin</b>, Cor J. Veenman, Hendrik J. van den Herik, Frank W. Takes,
+							<a href="https://doi.org/10.1007/978-3-030-05414-4_18" target="_blank">Understanding Behavioral Patterns in Truck Co-driving Networks</a>,
 							in <emph>Proceedings of the 7th International Conference on Complex Networks</emph>, Studies in Computational Intelligence 813, pp. 223-235, Springer, 2018.
 						</p>
 					</div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
-					<div class="flex-shrink-0 mr-2">1 <a href="attachments/bnaic-2018.pdf" target="_blank" download><i class="fas fa-download"></i></a></div>
+					<div class="flex-shrink-0 mr-2">1</div>
 					<div class="flex-grow-1">
 						<p class="mb-0">
-							António Pereira Barata, <b>Gerrit Jan de Bruin</b>, Cor J. Veenman, Hendrik J. van den Herik, Frank W. Takes, 
-							<a href="https://openaccess.leidenuniv.nl/handle/1887/69186" target="_blank">Finding Anaomalies in Waste Transportation Data with Supervised Category Models</a>,  
+							António Pereira Barata, <b>Gerrit Jan de Bruin</b>, Cor J. Veenman, Hendrik J. van den Herik, Frank W. Takes,
+							<a href="https://openaccess.leidenuniv.nl/handle/1887/69186" target="_blank">Finding Anomalies in Waste Transportation Data with Supervised Category Models</a>,
 							in <emph>Proceedings of the 27th Belgian Dutch Conference on Machine Learning</emph>, 15 pages, 2018.
 						</p>
 					</div>
 				</div>
-				<h3>Non-Refereed</h3>
+				<h3>Non-refereed</h3>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
 					<div class="flex-shrink-0 mr-2">-</div>
 					<div class="flex-grow-1">
 						<p class="mb-0">
-							<b>Gerrit Jan de Bruin, </b>, Cor J. Veenman, Hendrik J. van den Herik, Frank W. Takes, 
-							<a href="attachments/ic2s2-paper.pdf" download>Understanding truck co-driving behaviour using network analysis</a>,  
+							<b>Gerrit Jan de Bruin</b>, Cor J. Veenman, Hendrik J. van den Herik, Frank W. Takes,
+							<a href="attachments/ic2s2-paper.pdf" target="_blank">Understanding truck co-driving behaviour using network analysis</a>,
 							IC<sup>2</sup>S<sup>2</sup>, extended abstract, 2019.
 						</p>
 					</div>
@@ -241,59 +268,49 @@
 					<div class="flex-shrink-0 mr-2">-</div>
 					<div class="flex-grow-1">
 						<p class="mb-0">
-							António Pereira Barata, <b>Gerrit Jan de Bruin</b>, Frank W. Takes, Cor J. Veenman, 
-							<a href="attachments/ictopen.pdf" download>Data-driven Risk Assessment in Infrastructure Networks</a>,  
+							António Pereira Barata, <b>Gerrit Jan de Bruin</b>, Frank W. Takes, Cor J. Veenman,
+							<a href="attachments/ictopen.pdf" target="_blank">Data-driven Risk Assessment in Infrastructure Networks</a>,
 							ICTOPEN, extended abstract, 2018.
 						</p>
 					</div>
 				</div>
 				<h3>Conference contributions</h3>
-				<p>I chaired a session at <a href="https://2020.misdoom.org/" target="_blank">MISDOOM 2020</a>, and I assisted as a technical chair at <a href="https://bnaic.liacs.leidenuniv.nl/wordpress/" target="_blank">BNAIC/BENELEARN 2020</a>. Additionally, I have reviewed in total twelve papers for the following conferences.</p>
+				<p>I chaired a session at <a href="https://2020.misdoom.org/" target="_blank">MISDOOM 2020</a> and assisted as technical chair at <a href="https://bnaic.liacs.leidenuniv.nl/wordpress/" target="_blank">BNAIC/BENELEARN 2020</a>. I reviewed twelve papers for IDA 2021, ECAI 2020, MISDOOM 2019, MAISoN 2019 and 2020, and CN 2019.</p>
+			</div>
+		</section>
+		<hr class="m-0" />
+		<!-- Software-->
+		<section class="resume-section" id="software">
+			<div class="resume-section-content">
+				<h2>Software</h2>
 				<ul>
-					<!-- 4 -->
-					<li><a href="https://ida2021.org/" target="_blank">IDA 2021</a></li>
-					<!-- 2 -->
-					<li><a href="https://ecai2020.eu/" target="_blank">ECAI 2020</a></li>
-					<!-- 2 -->
-					<li><a href="http://misdoom.org/" target="_blank">MISDOOM 2019</a></li>
-					<!-- 2019: 2, 2020: 1 -->
-					<li><a href="https://www.maisonworkshop.org/" target="_blank">MAISoN 2019, 2020</a></li>
-					<!-- 1 -->
-					<li><a href="https://complexnetworks.org/" target="_blank">CN 2019</a></li>
-				</ul>
-				<h3>Code contributions</h3>
-				<ul>
-					<!-- 1 -->
-					<li>de Bruin-Hoegée, J.M., <b>de Bruin, G.J.</b>, <a href="https://doi.org/10.5281/zenodo.4276396">Python code for Chemical Attribution of Fentanyl</a>, used in:
-						<ul>
-							<li>
-								Mirjam de Bruin-Hoegée, Djarah Kleiweg, Daan Noort, Arian C. van Asten,<a href=""https://doi.org/10.1016/j.forc.2021.100330">Chemical attribution of fentanyl: The effect of human metabolism</a>,
-								<emph>Forensic Chemistry</emph>, 100330, Elsevier, 2021.</li>
-						</ul>
-					</li>
+					<li><b>DAQ</b>: data acquisition chain of TNO's measurement van and the Cabauw site, from Azure IoT Hub to Parquet, a Python query package, a FROST SensorThings server and campaign dashboards. Internal TNO software.</li>
+					<li><b>Dustmonitoring</b>: TNO's platform for particulate matter sensor networks, including the public <a href="https://ilm2.site.dustmonitoring.nl/" target="_blank">ILM2 dashboard</a>. Internal TNO software, which I maintain and modernise.</li>
+					<li><b>Ship emissions</b>: processing of the sniffer station measurements near the port of Rotterdam, from raw data to exhaust plumes linked to ships with AIS. Internal TNO software.</li>
+					<li><a href="https://github.com/gerritjandebruin/gaussian-plume" target="_blank">gaussian-plume</a>: Python implementation of the Gaussian plume model, developed in the EU LIFE project CLINSH.</li>
+					<li>Code for my papers: <a href="https://github.com/gerritjandebruin/cargo-ship-noncompliance-assessment" target="_blank">cargo-ship-noncompliance-assessment</a>, <a href="https://github.com/gerritjandebruin/temporal-link-prediction" target="_blank">temporal-link-prediction</a> and <a href="https://github.com/gerritjandebruin/truck-codriving" target="_blank">truck-codriving</a>.</li>
+					<li><a href="https://doi.org/10.5281/zenodo.4276396" target="_blank">Chemical attribution of fentanyl</a>: Python code, with J.M. de Bruin-Hoegée, used in <a href="https://doi.org/10.1016/j.forc.2021.100330" target="_blank">Chemical attribution of fentanyl: The effect of human metabolism</a>, <emph>Forensic Chemistry</emph>, 100330, 2021.</li>
 				</ul>
 			</div>
-
 		</section>
 		<hr class="m-0" />
 		<!-- Teaching-->
 		<section class="resume-section" id="teaching">
 			<div class="resume-section-content">
-				<h2 class="mb-5">Courses</h2>
+				<h2 class="mb-5">Teaching</h2>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
 					<div class="flex-grow-1">
-						<h3 class="mb-0"><a href="http://liacs.leidenuniv.nl/~takesfw/DSPM/" target="_blank">Data Science and Process Modelling</a></h3>
-						<span class='text-muted small'>(formerly Business Intelligence and Process Modelling)</span> 
-						<div class="subheading mb-3">Teaching assistant</div>
-						<p>This is a third year BSc course, where data science and process modelling is taught. In this course students learn to make a dashboard in JavaScript, analyze log-data with Petrinets, and make predictions with scikit-learn, among others.</p>
+						<h3 class="mb-0">Data Science and Process Modelling</h3>
+						<div class="subheading mb-3">Teaching assistant, Leiden University</div>
+						<p>Third-year BSc course in which students build a dashboard in JavaScript, analyse log data with Petri nets and make predictions with scikit-learn.</p>
 					</div>
 					<div class="flex-shrink-0"><span class="text-primary">2017 - 2020</span></div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
 					<div class="flex-grow-1">
-						<h3 class="mb-0"><a href="http://liacs.leidenuniv.nl/~kosterswa/pm/" target="_blank">Programming methods</a></h3>
-						<div class="subheading mb-3">Teaching assistant</div>
-						<p>Introduction course for overy 200 first year students, introducing them in the C++-language.</p>
+						<h3 class="mb-0">Programming Methods</h3>
+						<div class="subheading mb-3">Teaching assistant, Leiden University</div>
+						<p>Introductory C++ course for over 200 first-year students.</p>
 					</div>
 					<div class="flex-shrink-0"><span class="text-primary">2018 - 2020</span></div>
 				</div>
@@ -302,7 +319,7 @@
 				<div class="d-flex flex-column flex-md-row justify-content-between">
 					<div class="flex-shrink-0 mr-2">2020</div>
 					<div class="flex-shrink-0" style="width: 10rem;"><h5 class="mb-0">Nathalie van Veen</h5></div>
-					<div class="flex-grow-1"><p><a href="attachments/nathalie.pdf" download>The complex network of ship movements in Europe</a></p></div>
+					<div class="flex-grow-1"><p><a href="attachments/nathalie.pdf" target="_blank">The complex network of ship movements in Europe</a></p></div>
 				</div>
 				<h3 class="mb-3">BSc</h3>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-0">
@@ -324,41 +341,34 @@
 				<h2 class="mb-5">Education</h2>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
 					<div class="flex-grow-1">
-						<h3 class="mb-1">
-							<emph>University of Amsterdam & Free University Amsterdam
-						</h3>
-						<div class="subheading mb-1">MSc Analytical Chemistry</div>
-						<p class="mb-1"><b>Internship at Human Environment & Transport Inspectorate</b>, research on Efficient compliancy
-							monitoring: Comparison of both airborne and landside sniffing and spectrometric methods to provide direct
-							control on the sulfur emissions of ships.</p>
-						<p class="mb-1"><b>Internship at TNO</b>, research on Possibilities for breath examination in the detection of an inbody
-							explosive.</p>
-						<p class="mb-1 small">Subjects of Choice: Machine Learning 1 (6 EC), Mathematica for Physicists (3 EC), Advanced Seperation
-							Sciences (6 EC), Advanced Statistics (6 EC), Chemical Analysis for Forensic Evidence (6 EC), The
-							Analytical Chemist in Industry (6 EC) and Environmental Chemistry (6 EC)</p>
-						<p class="mb-1 small">Compulsory courses: Compulsory courses:Fundamentals of Analytical Science (6 EC), Mass Spectrometry (6
-							EC), Separation Sciences (6 EC) and Biomolecular Spectroscopy (6 EC)</p>
+						<h3 class="mb-1">Leiden University</h3>
+						<div class="subheading mb-1">PhD Computer Science</div>
+						<p class="mb-1">Thesis <a href="https://hdl.handle.net/1887/3656981" target="_blank">Network Analysis Methods for Smart Inspection in the Transport Domain</a>, defended on 16 November 2023. Funded by the Ministry of Infrastructure and Water Management.</p>
+					</div>
+					<div class="flex-shrink-0"><span class="text-primary">2017 - 2023</span></div>
+				</div>
+				<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+					<div class="flex-grow-1">
+						<h3 class="mb-1">University of Amsterdam &amp; Vrije Universiteit Amsterdam</h3>
+						<div class="subheading mb-1">MSc Chemistry, track Analytical Chemistry</div>
+						<p class="mb-1"><b>Internship at the Human Environment and Transport Inspectorate</b>: comparison of airborne and landside sniffing and spectrometric methods to monitor the sulphur emissions of ships. The thesis was cited in a letter to the Dutch parliament.</p>
+						<p class="mb-1"><b>Internship at TNO</b>: possibilities of breath examination for detecting an in-body explosive.</p>
 					</div>
 					<div class="flex-shrink-0"><span class="text-primary">2015 - 2017</span></div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
 					<div class="flex-grow-1">
-						<h3 class="mb-0">
-							<emph>Utrecht University
-						</h3>
+						<h3 class="mb-0">Utrecht University</h3>
 						<div class="subheading mb-0">BSc Chemistry</div>
-						<p class="mb-0">Internships at Van Wijhe Verf and "Condensed Matter and Interfaces" research group. Thesis about
-							Nano-thermometry using Lanthanum Phosphates.</p>
+						<p class="mb-0">Scholarship from the Topsector Chemie. Internships at Van Wijhe Verf and the Condensed Matter and Interfaces group; thesis on nano-thermometry using lanthanum phosphates.</p>
 					</div>
 					<div class="flex-shrink-0"><span class="text-primary">2012 - 2015</span></div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between">
 					<div class="flex-grow-1">
-						<h3 class="mb-0">
-							<emph>Van Lodenstein College
-						</h3>
+						<h3 class="mb-0">Van Lodenstein College, Amersfoort</h3>
 						<div class="subheading mb-0">Gymnasium</div>
-						<p>Bilingual education, Nature & Technique profile</p>
+						<p>Bilingual education, Nature &amp; Technology profile</p>
 					</div>
 					<div class="flex-shrink-0"><span class="text-primary">2006 - 2012</span></div>
 				</div>
@@ -369,27 +379,24 @@
 		<section class="resume-section" id="skills">
 			<div class="resume-section-content">
 				<h2 class="mb-5">Skills</h2>
-				<div class="subheading mb-3">Programming Languages & Tools</div>
+				<div class="subheading mb-3">Programming languages &amp; tools</div>
 				<ul class="list-inline dev-icons">
 					<li class="list-inline-item"><i class="fab fa-python"></i></li>
-					<li class="list-inline-item"><i class="fab fa-r-project"></i></li>
-					<li class="list-inline-item"><i class="fab fa-php"></i></li>
-					<li class="list-inline-item"><i class="fab fa-html5"></i></li>
-					<li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-					<li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-					<li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-					<li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+					<li class="list-inline-item"><i class="fab fa-microsoft"></i></li>
 					<li class="list-inline-item"><i class="fas fa-database"></i></li>
-					<li class="list-inline-item"><i class="fab fa-github"></i></li>
+					<li class="list-inline-item"><i class="fab fa-docker"></i></li>
+					<li class="list-inline-item"><i class="fab fa-gitlab"></i></li>
+					<li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+					<li class="list-inline-item"><i class="fab fa-r-project"></i></li>
 				</ul>
-				<p>In short, I consider myself both a full-stack data sciencist as well as a full-stack web developer. I have extensive experience with machine learning.</p>
+				<p>Python for data analysis, machine learning and data pipelines; SQL; Azure (IoT Hub, Functions, App Service, Container Apps, storage); Docker; Git and CI/CD in GitLab; C# and .NET; JavaScript; R. FAIR data management and sensor data standards such as SOSA/SSN and OGC SensorThings.</p>
 				<div class="subheading mt-5 mb-3">Certificates</div>
 				<ul class="fa-ul mb-0">
-					<li><span class="fa-li"><i class="fas fa-language fa-lg"></i></span><span class="pl-2">Anglia Certificate of English - Advanced level with Merit Grade</span></li>
+					<li><span class="fa-li"><i class="fas fa-language fa-lg"></i></span><span class="pl-2">Anglia Certificate of English, Advanced level with Merit Grade</span></li>
 					<li><span class="fa-li"><i class="fas fa-car fa-lg"></i></span><span class="pl-2">Driving license</span></li>
-					<li><span class="fa-li"><i class="fas fa-ship fa-lg"></i></span><span class="pl-2">International Certificate of Competence Boating License Inland and Coast</span></li>
-					<li><span class="fa-li"><i class="fas fa-futbol fa-lg"></i></span><span class="pl-2">Korfballtrainer 2 & Referee</span></li>
-
+					<li><span class="fa-li"><i class="fas fa-ship fa-lg"></i></span><span class="pl-2">International Certificate of Competence, boating license for inland and coastal waters</span></li>
+					<li><span class="fa-li"><i class="fas fa-paper-plane fa-lg"></i></span><span class="pl-2">EU drone pilot certificate A1/A3</span></li>
+					<li><span class="fa-li"><i class="fas fa-futbol fa-lg"></i></span><span class="pl-2">Korfball trainer 2 and referee</span></li>
 				</ul>
 			</div>
 		</section>
@@ -401,33 +408,29 @@
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
 					<div class="flex-shrink-0 mr-2">2020 - present</div>
 					<div class="flex-grow-1"><h5 class="mb-0">Playing korfball at <a href="https://synergo.nl/" target="_blank">Synergo</a></h5></div>
-				</div>	
+				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
 					<div class="flex-shrink-0 mr-2">2018 - 2019</div>
 					<div class="flex-grow-1"><h5 class="mb-0">Playing volleyball at <a href="https://www.uvo-amsterdam.nl/" target="_blank">UvO</a></h5></div>
-				</div>			
+				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
 					<div class="flex-shrink-0 mr-2">2016 - 2019</div>
-					<div class="flex-grow-1"><h5 class="mb-0">Organizing “JIFE”: a sport community for youth in Almere Haven</h5></div>
+					<div class="flex-grow-1"><h5 class="mb-0">Organizing "JIFE", a sports community for youth in Almere Haven</h5></div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
 					<div class="flex-shrink-0 mr-2">2003 - 2016</div>
-					<div class="flex-grow-1"><h5 class="mb-0">Player, Trainer, Coach and Referee at <a href="https://www.ckvmia.nl/" target="_blank">MIA</a> (korfball)</h5></div>
+					<div class="flex-grow-1"><h5 class="mb-0">Player, trainer, coach and referee at <a href="https://www.ckvmia.nl/" target="_blank">MIA</a> (korfball)</h5></div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
 					<div class="flex-shrink-0 mr-2">2013 - 2014</div>
-					<div class="flex-grow-1"><h5 class="mb-0">Organizing Chemistry Sessions for primary school “De Wartburg”, Woudenberg</h5></div>
+					<div class="flex-grow-1"><h5 class="mb-0">Organizing chemistry sessions for primary school "De Wartburg", Woudenberg</h5></div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mb-2">
 					<div class="flex-shrink-0 mr-2">2011 - 2012</div>
-					<div class="flex-grow-1"><h5 class="mb-0">Organizing Korfball Sessions for primary schools</h5></div>
+					<div class="flex-grow-1"><h5 class="mb-0">Organizing korfball sessions for primary schools</h5></div>
 				</div>
-				<p class="my-5">In general, I like to play sports (including korfball, volleyball, softball, skiing, snowboarding). 
-					And since very recently, we have a boat!
-					We plan to explore the many waterways in the Netherlands, which we will cover in a blog in the very near future.
-					When weather conditions (or corona crisis) don't allow me to do this, I work on <a href="https://github.com/gerritjandebruin/home-assistant" target="_blank">my home automation set-up</a>, which includes now over 30 devices.</p>
+				<p class="my-5">Besides sports, I spend my spare time on our electric boat, which I made smart with a GPS tracker, on flying drones, and on <a href="/home-assistant/" target="_blank">my smart home</a>, built with Home Assistant.</p>
 			</div>
-			
 		</section>
 		<hr class="m-0" />
 		
